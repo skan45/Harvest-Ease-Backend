@@ -4,8 +4,8 @@ import jwt from 'jsonwebtoken';
 import User from '../models/user.js';
 
 const router = express.Router();
+//register user
 
-// Register User
 router.post('/register', async (req, res) => {
   const { name, email, password } = req.body;
   try {
