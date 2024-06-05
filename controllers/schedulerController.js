@@ -74,6 +74,7 @@ const getEventById = async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 };
+
 // Update Event by ID
 const updateEventById = async (req, res) => {
   const userId = req.user._id;
